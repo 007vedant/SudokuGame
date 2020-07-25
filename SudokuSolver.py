@@ -58,7 +58,7 @@ def is_valid(grid, cell, num):
 
     for i in range(ygrid * 3, ygrid * 3 + 3):
         for j in range(xgrid * 3, xgrid * 3 + 3):
-            if grid[i][j] == num and (i, j) != grid:
+            if grid[i][j] == num and (i, j) != cell:
                 return False
 
     return True
